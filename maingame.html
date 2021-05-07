@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en' dir='ltr'>
+
+  <head>
+    <meta charset='UTF-8'>
+    <title>Stroop Effect</title>
+    <link rel='stylesheet' href='maingame.css'>
+  </head>
+
+  <body>
+    <h1>Stroop Effect</h1>
+    <p>Test your reflexes within the given time.</p>
+
+<!-- timer here -->
+    <section class='timer-display'>
+      <p class='timer-display'></p>
+    </section>
+
+<!-- score here -->
+    <section class='score-board'>
+      <p class='scores'></p>
+    </section>
+    
+<!-- text here -->
+    <section class='text-colour'>
+      <p id= 'text-id' class='text'>Red</p>
+    </section>
+
+<!-- button here -->
+    <section class='buttons'>
+    <table>
+      <div class='play-buttons'>
+        <th><button id='redbutton' class='button-red' type='button'></button></th>
+        <th><button id='greenbutton' class='button-green' type='button'></button></th>
+        <th><button id='bluebutton' class='button-blue' type='button'></button></th>
+      </div>
+    </table>
+      <div class='start-button'>
+        <button id='start-button' class='strt-btn' type='button'>Start</button>
+      </div>
+      <div class='reset-button'>
+        <button id='reset-button' class='rst-btn' type='button'>Play again?</button>
+      </div>
+    </section>
+    <script type="text/javascript" src='maingame.js'></script>
+  </body>
+</html>

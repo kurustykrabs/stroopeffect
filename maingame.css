@@ -1,0 +1,49 @@
+body {
+  background-color: rgba(300, 10, 0, 0.5);
+  padding-top: 50px;
+  padding-left: 550px;
+}
+
+.button-red
+{
+  width: 70px;
+  height: 30px;
+  background-color: red;
+}
+
+.button-green
+{
+  width: 70px;
+  height: 30px;
+  background-color: green;
+}
+
+.button-blue
+{
+  width: 70px;
+  height: 30px;
+  background-color: blue;
+}
+
+.text
+{
+  font-size: 50px;
+  padding-top: 100px;
+  padding-left: 100px;
+}
+
+
+table {
+  margin: .3em;
+  width:: 20px;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+th {
+  padding: .2em;
+}
+
+p {
+  padding-left: 15px;
+}
