@@ -2,7 +2,7 @@ let start = document.getElementById('start-button');
 let red = document.getElementById('redbutton');
 let green = document.getElementById('greenbutton');
 let blue = document.getElementById('bluebutton');
-// let reset = document.getElementById('reset-button');
+let reset = document.getElementById('reset-button');
 
 let score_board = document.querySelector('.scores');
 let score = 0
@@ -19,12 +19,12 @@ start.addEventListener('click', handleStartClick);
 red.addEventListener('click', displayColour);
 green.addEventListener('click', displayColour);
 blue.addEventListener('click', displayColour);
-// reset.addEventListener('click', handleResetClick);
+reset.addEventListener('click', handleResetClick);
 
 
 //timer here
 function handleStartClick () {
-  // reset.style.display = 'inline';
+  reset.style.display = 'none';
   game = true;
   startTimer()
   timer_display.style.display = 'inline';
@@ -43,7 +43,8 @@ function startTimer () {
       // reset.style.display = 'none';
       timer_display.style.display = 'none';
       game = false;
-      // timer = 10;
+      reset.style.display = 'inline';
+      handleResetClick()
     }
   }, 1000);
 
@@ -66,4 +67,9 @@ function displayColour (e) {
    generatedText.style.color = colours[getRandomElement()];
    score_board.innerHTML = score
  }
+}
+
+function handleResetClick () {
+  handleStartClick()
+  console.log(handleResetClick)
 }
